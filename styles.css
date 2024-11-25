@@ -33,11 +33,12 @@ body {
 .card {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
     justify-content: center;
     background-color: white;
     text-align: left;
     margin-top: 10%;
-    max-width: 50%;
+    max-width: 55%;
     min-width: 20%;
     border-radius: 1.25rem;
     padding: 2.25rem;
@@ -46,10 +47,11 @@ body {
     word-break: break-word;
     white-space: normal;
     overflow: hidden;
-    font-weight: 200;
+    font-weight: 400;
+    color: var(--stone600);
 }
 
-.image img{
+.image img {
     border-radius: 0.75em;
     max-width: 100%;
     max-height: 100%;
@@ -60,7 +62,7 @@ body {
 .preparation-time {
     border-radius: 0.75em;
     background-color: var(--rose50);
-    padding: 2.25em;
+    padding: 2em;
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
@@ -72,16 +74,54 @@ body {
     font-family: 'Young Serif', sans-serif;
     font-size: 2.25em;
     font-weight: 400;
+    color: var(--stone900);
 }
 
-.ingredients h3{
+.description {
+    margin-top: 20px;
+}
+
+h3 {
     font-size: 1.75em;
-    margin-top: 20rem;
     font-family: 'Young Serif', sans-serif;
     font-weight: 400;
+    color: var(--brown800);
 }
 
-.preparation-time h4{
+.preparation-time h4 {
     font-family: 'Outfit', sans-serif;
     font-size: 1.25em;
+    color: var(--rose800);
+}
+
+ul li {
+    margin-top: 10px;
+    padding-left: 16px;
+}
+
+ol li {
+    margin-top: 10px;
+    padding-left: 16px;
+}
+
+.list-details {
+    margin-top: 20px;
+    padding-left: 24px;
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--stone150);
+}
+
+.preparation-time ul li::marker {
+    color: var(--rose800);
+}
+
+.ingredients ul li::marker {
+    color: var(--brown800);
+}
+
+.instructions ol li::marker {
+    color: var(--brown800);
 }
